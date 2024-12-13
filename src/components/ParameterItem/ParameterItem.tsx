@@ -25,7 +25,7 @@ const ParameterItem = (props: ParameterItemProps) => {
   const bgColor = percent >= 0 ? "rgb(228, 240, 209)" : "rgb(253, 236, 236)";
   return (
     <>
-      <tr onClick={() => props.handleRowClick(parameter, props.index)}>
+      <tr style={{cursor: "pointer"}} onClick={() => props.handleRowClick(parameter, props.index)}>
         <td className={s.table_headers}>{parameter.name}</td>
         <td className={s.currentDay}>{parameter.currentDay}</td>
         <td style={{ backgroundColor: bgColor }}>
