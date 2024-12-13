@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Delta-test/static/css/main.4bcb2962.css",
-    "main.js": "/Delta-test/static/js/main.e387eb3d.js",
+    "main.js": "/Delta-test/static/js/main.a5248f98.js",
     "static/js/453.dc072285.chunk.js": "/Delta-test/static/js/453.dc072285.chunk.js",
     "index.html": "/Delta-test/index.html",
     "main.4bcb2962.css.map": "/Delta-test/static/css/main.4bcb2962.css.map",
-    "main.e387eb3d.js.map": "/Delta-test/static/js/main.e387eb3d.js.map",
+    "main.a5248f98.js.map": "/Delta-test/static/js/main.a5248f98.js.map",
     "453.dc072285.chunk.js.map": "/Delta-test/static/js/453.dc072285.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4bcb2962.css",
-    "static/js/main.e387eb3d.js"
+    "static/js/main.a5248f98.js"
   ]
 }
