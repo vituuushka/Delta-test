@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { initParameters, Parameter } from "./parameters";
 import ParameterItem from "../ParameterItem/ParameterItem";
-import s from './ParameterList.module.css'
+import s from "./ParameterList.module.css";
 import classNames from "classnames";
 
 const ParameterList = () => {
@@ -29,11 +29,13 @@ const ParameterList = () => {
 
   return (
     <div>
-      <table className={classNames("table",s.table)}>
+      <table className={classNames("table", s.table)}>
         <thead className={s.table_headers}>
           <tr>
             <th scope="col">Показатель</th>
-            <th scope="col" className={s.currentDay}>Текущий день</th>
+            <th scope="col" className={s.currentDay}>
+              Текущий день
+            </th>
             <th scope="col">Вчера</th>
             <th scope="col">Этот день недели</th>
           </tr>
