@@ -1,20 +1,25 @@
-.table thead, tbody, tfoot, tr, td, th {
-    border: none !important;
-    color: rgb(131, 131, 131) !important;
+.table thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border: none !important;
+  color: rgb(131, 131, 131) !important;
 }
 .table {
-    border-collapse: separate;
+  border-collapse: separate;
 }
 .table th {
-    font-weight: normal;
+  font-weight: normal;
 }
 .table_headers th {
-    background-color: rgb(238, 238, 238) !important;
-    text-align: center;
+  background-color: rgb(238, 238, 238) !important;
+  text-align: center;
 }
 .table_headers th.currentDay {
-    background-color: rgb(221, 238, 253) !important;
+  background-color: rgb(221, 238, 253) !important;
 }
 .table {
-    color: rgb(141, 141, 141) !important;
+  color: rgb(141, 141, 141) !important;
 }
