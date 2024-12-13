@@ -1,0 +1,28 @@
+.currentDay {
+    background-color: rgb(221, 238, 253) !important;
+    /* text-align: right; */
+}
+.table_headers {
+    background-color: rgb(238, 238, 238) !important;
+}
+.subcolumn {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+.subcolumn span {
+    flex: 1;
+}
+.subcolumn .percent {
+    margin-left: 20px;
+}
+.subcolumn .percent.positive {
+    color: green;
+}
+.subcolumn .percent.negative {
+    color: red;
+}
+
+td:not(.table_headers) {
+    text-align: right;
+}

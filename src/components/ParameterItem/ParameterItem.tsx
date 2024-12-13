@@ -2,6 +2,8 @@ import React from "react";
 import { Parameter } from "../ParameterList/parameters";
 import Highcharts, { Options } from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+import s from "./ParameterItem.module.css"
+import classNames from "classnames";
 
 type ParameterItemProps = {
   parameter: Parameter;
@@ -16,12 +18,18 @@ type ParameterItemProps = {
 };
 const ParameterItem = (props: ParameterItemProps) => {
   const parameter = props.parameter;
+  const percent = Math.floor(((parameter.currentDay/parameter.yesterday)*100)-100)
   return (
     <>
       <tr onClick={() => props.handleRowClick(parameter, props.index)}>
-        <td>{parameter.name}</td>
-        <td>{parameter.currentDay}</td>
-        <td>{parameter.yesterday}</td>
+        <td className={s.table_headers}>{parameter.name}</td>
+        <td className={s.currentDay} >{parameter.currentDay}</td>
+        <td>
+          <div className={s.subcolumn}>
+            <span className={s.number}>{parameter.yesterday}</span>
+            <span className={`${s.percent} ${percent >= 0 ? s.positive : s.negative}`}>{percent}%</span>
+          </div>
+          </td>
         <td>{parameter.thisDay}</td>
       </tr>
       {props.selectedRowIndex === props.index && props.selectedRow && (

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { initParameters, Parameter } from "./parameters";
 import ParameterItem from "../ParameterItem/ParameterItem";
-import HighchartsReact from "highcharts-react-official";
-import Highcharts, { Options } from "highcharts";
+import s from './ParameterList.module.css'
+import classNames from "classnames";
 
 const ParameterList = () => {
   const [parameters, setParameters] = useState<Parameter[]>(initParameters);
@@ -29,11 +29,11 @@ const ParameterList = () => {
 
   return (
     <div>
-      <table className="table">
-        <thead>
+      <table className={classNames("table",s.table)}>
+        <thead className={s.table_headers}>
           <tr>
             <th scope="col">Показатель</th>
-            <th scope="col">Текущий день</th>
+            <th scope="col" className={s.currentDay}>Текущий день</th>
             <th scope="col">Вчера</th>
             <th scope="col">Этот день недели</th>
           </tr>
